@@ -1,0 +1,29 @@
+int led=13;             //coloca el pin 13 como variable led
+int conteo=0;           //crea una variable llamada "conteo" e inicia su valor en 0
+int cambio=0;           //crea una variable llamada "cambio" e inicia su valor en 0
+int durar=0;            //crea una variable llamada "durar" e inicia su valor en 0
+void setup(){           //en esta sentencia se colocan los pines del arduino como entradas
+                        //o salidas.
+  pinMode(led, OUTPUT); // coloca la variable led (pin 13)como salida 
+}
+void loop(){            //en esta sentencia se realiza todas las acciones que queremos que
+                        // nuestro arduino haga
+  if(conteo==5){        //pregunta si conteo es igual a 5
+    delay(3000);        //esta funcion genera un retardo de 5 segundos
+    digitalWrite(led, HIGH); //esta funcion escribe digitgalmente un estado alto y enciende el led
+    cambio=1;             //me cambia el estado de la bariable "cambio"
+    conteo=0;             // me cambia el estado de la variable "conteo"
+  }
+  else{                   // esta sentencia se realiza cuando no se cumple la comparacion del if
+    conteo=conteo+1;
+  }
+  if(cambio ==1 && durar==5){
+    delay(3000);
+    durar =0;
+  digitalWrite(led, LOW);
+  }
+  else{
+    durar=durar+1;
+  }
+  
+}

@@ -1,0 +1,4 @@
+Welcome to shell scripting
+Welcome is a testing
+I love shell scripting.
+shell scripting is awesome

@@ -1,0 +1,14 @@
+#!/bin/bash
+#show_system is function
+show_system(){
+	echo "************** The uptime is **************";
+	uptime;
+	echo;
+	echo "************** CPU Details **************";
+	lscpu;
+	echo;
+	echo "************** User list **************";
+	who;
+}
+#Function called
+show_system

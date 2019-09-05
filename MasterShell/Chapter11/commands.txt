@@ -1,0 +1,7 @@
+awk '/^xxxxx/{print $0}' <file>
+sed -n '/xxxxxx/p' <file>
+awk '/xxxxxx$//p' <file>
+awk '!/^/{print $0}' <file>
+--------------------------------
+awk '/.sh/{print $0}' <file>
+sed -n '/[mbr]ash/p' <file>

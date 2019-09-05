@@ -1,0 +1,15 @@
+ sudo apt install dialog
+
+ dialog --title "My Message" --msgbox "Hello Worldsudo apt update" 6 20
+ dialog --title "My Message" --msgbox "Hello World" 6 20
+ dialog --title "My Message" --msgbox "Hello World" --yesno "ok" 6 20
+ dialog --title "My Message" --msgbox "Hello World" 6 20--yesno "ok" 3 5
+ dialog --title "My Message" --msgbox "Hello World" 6 20 --yesno "ok" 3 5
+ dialog --title "About" --yesno "Are you sure?" 5 20
+ dialog --infobox  "Tis is the Info" 10 25
+ dialog --title "Ips Red" --textbox Ips.txt 20 10
+ dialog --title "Ips Red" --textbox Ips.txt 20 20
+ dialog --menu "Please Pick One" 10 30 3 1 blue 2 green 3 pink
+ dialog --menu "Please Pick One" 10 30 3 1 blue 2 green 3 pink
+ dialog --inputbox "Please enter your name: " 5 40
+

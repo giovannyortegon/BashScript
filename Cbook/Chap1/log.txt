@@ -1,0 +1,3 @@
+LOG FILE HEDER
+This is a test log file
+Function:  System statistics

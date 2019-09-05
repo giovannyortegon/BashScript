@@ -1,0 +1,126 @@
+Traceback (most recent call last):
+  File "<pyshell#3>", line 2, in <module>
+    contacto.spli('\t\t')
+AttributeError: 'str' object has no attribute 'spli'
+>>> for contacto in file:
+	contacto.split('\t\t')
+
+	
+['Adriana Ortegon', '3124567894\n']
+['Paula Ortegon', '3155631245\n']
+>>> contacto.split('\t\t')
+['Paula Ortegon', '3155631245\n']
+>>> agenda = contacto.split('\t\t')
+>>> agenda
+['Paula Ortegon', '3155631245\n']
+>>> agenda[0]
+'Paula Ortegon'
+>>> agenda[1]
+'3155631245\n'
+>>> contacto.split('\n')
+['Paula Ortegon\t\t3155631245', '']
+>>> agenda2 = dict[ agenda[0]:agenda[1]]
+Traceback (most recent call last):
+  File "<pyshell#13>", line 1, in <module>
+    agenda2 = dict[ agenda[0]:agenda[1]]
+TypeError: 'type' object is not subscriptable
+>>> agenda2 = dict[{agenda[0]:agenda[1]}]
+Traceback (most recent call last):
+  File "<pyshell#14>", line 1, in <module>
+    agenda2 = dict[{agenda[0]:agenda[1]}]
+TypeError: 'type' object is not subscriptable
+>>> agenda[0]
+'Paula Ortegon'
+>>> agenda2.dict[{agenda[0]:agenda[1]}]
+Traceback (most recent call last):
+  File "<pyshell#16>", line 1, in <module>
+    agenda2.dict[{agenda[0]:agenda[1]}]
+NameError: name 'agenda2' is not defined
+>>> agenda2 = {'Nombre':'Numero'}
+>>> agenda
+['Paula Ortegon', '3155631245\n']
+>>> agenda2
+{'Nombre': 'Numero'}
+>>> dict[Nombre]
+Traceback (most recent call last):
+  File "<pyshell#20>", line 1, in <module>
+    dict[Nombre]
+NameError: name 'Nombre' is not defined
+>>> agenda2.dict['Nombre']
+Traceback (most recent call last):
+  File "<pyshell#21>", line 1, in <module>
+    agenda2.dict['Nombre']
+AttributeError: 'dict' object has no attribute 'dict'
+>>> agenda2.dict[{agenda[0]:agenda[1]}]
+Traceback (most recent call last):
+  File "<pyshell#22>", line 1, in <module>
+    agenda2.dict[{agenda[0]:agenda[1]}]
+AttributeError: 'dict' object has no attribute 'dict'
+>>> agenda2
+{'Nombre': 'Numero'}
+>>> agenda2.keys()
+dict_keys(['Nombre'])
+>>> a="Giovanny Ortegon"
+>>> b="3125896345"
+>>> agenda2.dict[{a:b}]
+Traceback (most recent call last):
+  File "<pyshell#27>", line 1, in <module>
+    agenda2.dict[{a:b}]
+AttributeError: 'dict' object has no attribute 'dict'
+>>> agenda2 = dict[{a:b}]
+Traceback (most recent call last):
+  File "<pyshell#28>", line 1, in <module>
+    agenda2 = dict[{a:b}]
+TypeError: 'type' object is not subscriptable
+>>> agenda2.update(a:b)
+SyntaxError: invalid syntax
+>>> agenda2.update({a:b})
+>>> agenga2
+Traceback (most recent call last):
+  File "<pyshell#31>", line 1, in <module>
+    agenga2
+NameError: name 'agenga2' is not defined
+>>> agenda2
+{'Nombre': 'Numero', 'Giovanny Ortegon': '3125896345'}
+>>> agenda2.update({agenda[0]:agenda[1]})
+>>> agenda2
+{'Nombre': 'Numero', 'Giovanny Ortegon': '3125896345', 'Paula Ortegon': '3155631245\n'}
+>>> nombre = input()
+Alvaro
+>>> Telefono = 3105468978
+>>> contacto = agenda2.update({nombre:Telefono})
+>>> file =  open("/home/skill/Documents/Scripts/Agenda.txt", "a",encoding="utf-8")
+>>> file.write(contacto)
+Traceback (most recent call last):
+  File "<pyshell#39>", line 1, in <module>
+    file.write(contacto)
+TypeError: write() argument must be str, not None
+>>> contacto
+>>> agenda2
+{'Nombre': 'Numero', 'Giovanny Ortegon': '3125896345', 'Paula Ortegon': '3155631245\n', 'Alvaro': 3105468978}
+>>> file.write(agenda2)
+Traceback (most recent call last):
+  File "<pyshell#42>", line 1, in <module>
+    file.write(agenda2)
+TypeError: write() argument must be str, not dict
+>>> file =  open("/home/skill/Documents/Scripts/Agenda.txt", "rw+",encoding="utf-8")
+Traceback (most recent call last):
+  File "<pyshell#43>", line 1, in <module>
+    file =  open("/home/skill/Documents/Scripts/Agenda.txt", "rw+",encoding="utf-8")
+ValueError: must have exactly one of create/read/write/append mode
+>>> file.seek(0)
+0
+>>> file.seek(0,2)
+83
+>>> file =  open("/home/skill/Documents/Scripts/Agenda.txt","w" encoding="utf-8")
+SyntaxError: invalid syntax
+>>> 
+>>> file =  open("/home/skill/Documents/Scripts/Agenda.txt", "w",encoding="utf-8")
+>>> agenda2
+{'Nombre': 'Numero', 'Giovanny Ortegon': '3125896345', 'Paula Ortegon': '3155631245\n', 'Alvaro': 3105468978}
+>>> file.write(agenda2)
+Traceback (most recent call last):
+  File "<pyshell#50>", line 1, in <module>
+    file.write(agenda2)
+TypeError: write() argument must be str, not dict
+>>> file =  open("/home/skill/Documents/Scripts/Agenda.txt", encoding="utf-8")

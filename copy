@@ -1,0 +1,9 @@
+#!/bin/bash
+
+function copying {
+		cp -f $1 $2
+		echo -en "\e[107m | \e[0m"
+		sleep 1
+}
+echo -n "Copying "; copying $1 $2
+echo "Copy done."

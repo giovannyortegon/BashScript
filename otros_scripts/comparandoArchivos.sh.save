@@ -1,0 +1,11 @@
+echo "Comparando archivos"
+echo "Ingrese los nombre de los archivos: "
+read source target
+if [ -f "$source" =
+
+ -f "$target" ]
+then
+echo "Los archivos son iguales"
+else
+echo "Los archivos son diferentes"
+fi

@@ -1,0 +1,5 @@
+Linux refers to the family of Unix-like computer operating systems
+that use the Linux kernel. Linux can be installed on a wide variety of
+computer hardware, ranging from mobile phones, tablet computers and video
+game consoles, to mainframes and supercomputers. Linux is predominantly
+known for its use in servers.
